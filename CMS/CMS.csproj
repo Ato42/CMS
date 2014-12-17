@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF9EC030-8A72-4D63-901F-B29A9E5DACD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS</RootNamespace>
+    <AssemblyName>CMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20142.33409, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Schedule.4, Version=4.0.20142.293, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Schedule.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1SplitContainer.4, Version=4.0.20142.56, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1SplitContainer.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Win7Pack.4, Version=4.0.20142.39, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Win7Pack.4.dll</HintPath>
+    </Reference>
+    <Reference Include="FileTransfersControl">
+      <HintPath>C:\Users\42\Downloads\51CTO下载-文件传输\UdpSendFileDemo - 6\UdpSendFileDemo\bin\Debug\FileTransfersControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBoardroomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBoardroomForm.designer.cs">
+      <DependentUpon>AddBoardroomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConMemberApplyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConMemberApplyForm.designer.cs">
+      <DependentUpon>AddConMemberApplyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConMemberForm.designer.cs">
+      <DependentUpon>AddConMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTopicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTopicForm.Designer.cs">
+      <DependentUpon>AddTopicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoardroomManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoardroomManagementForm.designer.cs">
+      <DependentUpon>BoardroomManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseBoardroomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseBoardroomForm.designer.cs">
+      <DependentUpon>ChooseBoardroomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenceApplyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConferenceApplyForm.designer.cs">
+      <DependentUpon>ConferenceApplyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenceAuditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConferenceAuditForm.designer.cs">
+      <DependentUpon>ConferenceAuditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenceManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConferenceManagementForm.designer.cs">
+      <DependentUpon>ConferenceManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenceModForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConferenceModForm.Designer.cs">
+      <DependentUpon>ConferenceModForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConMemberForm.designer.cs">
+      <DependentUpon>ConMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterManagementForm.designer.cs">
+      <DependentUpon>RegisterManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceAdd.Designer.cs">
+      <DependentUpon>ResourceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceManageForm.designer.cs">
+      <DependentUpon>ResourceManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendFileForm.designer.cs">
+      <DependentUpon>SendFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskManagementForm.designer.cs">
+      <DependentUpon>TaskManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopicApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopicApplicationForm.Designer.cs">
+      <DependentUpon>TopicApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopicManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopicManagementForm.designer.cs">
+      <DependentUpon>TopicManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBoardroomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBoardroomForm.designer.cs">
+      <DependentUpon>UpdateBoardroomForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBoardroomForm.resx">
+      <DependentUpon>AddBoardroomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConMemberApplyForm.resx">
+      <DependentUpon>AddConMemberApplyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConMemberForm.resx">
+      <DependentUpon>AddConMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTopicForm.resx">
+      <DependentUpon>AddTopicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoardroomManagementForm.resx">
+      <DependentUpon>BoardroomManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseBoardroomForm.resx">
+      <DependentUpon>ChooseBoardroomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConferenceApplyForm.resx">
+      <DependentUpon>ConferenceApplyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConferenceAuditForm.resx">
+      <DependentUpon>ConferenceAuditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConferenceManagementForm.resx">
+      <DependentUpon>ConferenceManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConferenceModForm.resx">
+      <DependentUpon>ConferenceModForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConMemberForm.resx">
+      <DependentUpon>ConMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterManagementForm.resx">
+      <DependentUpon>RegisterManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceAdd.resx">
+      <DependentUpon>ResourceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceManageForm.resx">
+      <DependentUpon>ResourceManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendFileForm.resx">
+      <DependentUpon>SendFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskManagementForm.resx">
+      <DependentUpon>TaskManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopicApplicationForm.resx">
+      <DependentUpon>TopicApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopicManagementForm.resx">
+      <DependentUpon>TopicManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBoardroomForm.resx">
+      <DependentUpon>UpdateBoardroomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{D1C8C001-2BCF-4DE8-89A2-44B32C39A766}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{6ca954ac-a66e-4de5-8167-6f5a488808dd}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DB\DB.csproj">
+      <Project>{c539b89a-d3d1-4b2c-9584-f778b60292d7}</Project>
+      <Name>DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{029203B8-B378-4C32-A0EB-CE90F0546224}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UdpSendFile\UdpSendFile.csproj">
+      <Project>{df0db212-1ac3-4c6c-bc72-8a62166e4969}</Project>
+      <Name>UdpSendFile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bg_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\dec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\dec_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\cmsLogoFin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\cms_logo_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\userimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\dec01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\dec02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\cmstxt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
